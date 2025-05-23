@@ -1,4 +1,6 @@
-### WORK-CASE-6
+Виконала самостійно Слобожан Софія РПЗ-23А
+
+# WORK-CASE-6
 
 # Task 1: Installing Additional Shells
 
