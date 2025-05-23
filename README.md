@@ -25,8 +25,10 @@ Fish (Friendly Interactive Shell):
 User-friendly with autosuggestions and syntax highlighting out of the box.
 
 Does not use bash-compatible scripting syntax but is very intuitive for new users.
+To begin, we installed two additional command-line interpreters besides the default Bash shell. We chose Zsh (Z Shell) and Fish (Friendly Interactive Shell). These shells were installed through the package manager available in the Linux system. After installation, we verified that both shells were working properly by checking their versions and launching them.
 
 ###  To allow users to use different shells based on their role or preference, and to demonstrate the flexibility of the Linux shell environment.
+
 # Task 2: Creating Users and Groups
 ### Commands Used:
 # Create groups
@@ -53,6 +55,8 @@ sudo useradd -m -s /usr/sbin/nologin -G guests guest2
 ![image](https://github.com/user-attachments/assets/0f8bede4-cff8-4324-b313-e6cd9425870e)
 
 ### To manage permissions and shell access per role by organizing users into logical groups
+
+Next, we created five user groups to reflect different roles within an organization: technical support, developers, financiers, founders, and guests. A total of ten new user accounts were created and assigned to these groups. Each group represents a type of user with specific responsibilities and access needs.
 
 # Task 3: Assigning Default Shells
 User Group	Default Shell
@@ -89,6 +93,18 @@ Prevent shell access to finance and guest users.
 
 Provide powerful developer-oriented shells to programmers.
 
+### Based on each group’s purpose, we assigned appropriate default shells to users:
+
+Technical support users were assigned the Bash shell.
+
+Developers were assigned the Zsh shell.
+
+Founders were given access to the Fish shell.
+
+Financiers and guests were restricted from accessing any shell by setting their accounts to use a non-interactive shell that blocks login access.
+
+This setup ensured that only technical roles had access to interactive shell environments, while non-technical roles were restricted for security.
+
 # Task 4: Demonstration of User Capabilities
 Example Commands Executed by Group Members:
 ### Tech Support (tech1, tech2) using bash:
@@ -115,6 +131,7 @@ This account is currently not available.
 
 ![image](https://github.com/user-attachments/assets/25afb0f2-847a-426b-8971-9cfa5fe604a6)
 
+Finally, we tested the setup by logging into the accounts of users with shell access. We performed basic system operations such as checking the current user, viewing the working directory, displaying the system date, and checking system uptime. These actions verified that each user’s shell and permissions worked as intended. For users with restricted shells, login attempts were blocked as expected.
  # Conclusion 
 ### No commands are run for users with /usr/sbin/nologin because they don’t have interactive shell access. 
 In this lab, multiple command-line interpreters (Zsh and Fish) were installed, user groups were created to simulate organizational roles, and users were assigned default shells based on their roles. Appropriate shell access was configured to enhance usability and security, and basic system commands were successfully executed by authorized users, confirming correct setup.
