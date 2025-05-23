@@ -132,6 +132,5 @@ This account is currently not available.
 ![image](https://github.com/user-attachments/assets/25afb0f2-847a-426b-8971-9cfa5fe604a6)
 
 Finally, we tested the setup by logging into the accounts of users with shell access. We performed basic system operations such as checking the current user, viewing the working directory, displaying the system date, and checking system uptime. These actions verified that each user’s shell and permissions worked as intended. For users with restricted shells, login attempts were blocked as expected.
- # Conclusion 
-### No commands are run for users with /usr/sbin/nologin because they don’t have interactive shell access. 
-In this lab, multiple command-line interpreters (Zsh and Fish) were installed, user groups were created to simulate organizational roles, and users were assigned default shells based on their roles. Appropriate shell access was configured to enhance usability and security, and basic system commands were successfully executed by authorized users, confirming correct setup.
+# Conclusion 
+###In this lab, multiple command-line interpreters (Zsh and Fish) were installed, user groups were created to simulate organizational roles, and users were assigned default shells based on their roles. Appropriate shell access was configured to enhance usability and security, and basic system commands were successfully executed by authorized users, confirming correct setup.
